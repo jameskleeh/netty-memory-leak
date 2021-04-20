@@ -1,0 +1,7 @@
+micronaut:
+  application:
+    name: temp
+  server:
+    max-request-size: 50mb
+    multipart:
+      max-file-size: 30mb
