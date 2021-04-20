@@ -24,7 +24,8 @@ micronaut {
 configurations.all {
     resolutionStrategy.eachDependency { DependencyResolveDetails details ->
         if (details.requested.group == 'io.netty') {
-            //details.useVersion '4.1.63.Final'
+            //Comment this out to use the provided 4.1.59 version which does not have this issue
+            details.useVersion '4.1.63.Final'
         }
     }
 }
